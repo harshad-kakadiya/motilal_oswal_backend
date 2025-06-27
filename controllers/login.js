@@ -4,7 +4,6 @@ const User = require('../models/User');
 const { PROFILE_API, JWT_SECRET } = process.env;
 
 exports.motilalLogin = {
-    // 🔐 Step 1: Redirect to Motilal Login
     redirectToMotilal: (req, res) => {
         const { apikey } = req.query;
 
