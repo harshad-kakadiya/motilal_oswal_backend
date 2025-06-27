@@ -18,7 +18,6 @@ exports.motilalLogin = {
         res.redirect(redirectUrl);
     },
 
-    // 🔄 Step 2: Handle Callback
     handleCallback: async (req, res) => {
         const { authtoken, state: apikey } = req.query;
         console.log(authtoken, apikey);
