@@ -33,7 +33,6 @@ mongoose.connect(MONGO_URI)
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.error('MongoDB Connection Failed:', err));
 
-// WebSocket Authentication Middleware
 const authenticateSocket = (socket, next) => {
     const token = socket.handshake.auth.token;
 
